@@ -1,0 +1,19 @@
+nav {
+    background-color: whitesmoke;
+    min-height: 3rem;
+    padding: 0 3rem 0 3rem;
+    position: static;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .nav-link-container {
+        min-width: 10rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+}

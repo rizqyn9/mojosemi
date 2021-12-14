@@ -1,0 +1,20 @@
+#home {
+    width: 100%;
+    .hero-container {
+        width: 100%;
+        min-height: 70vh;
+        
+        background-color: black;
+    }
+
+    .home-card-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        .card-container {
+            background-color: red;
+        }
+    }
+}
