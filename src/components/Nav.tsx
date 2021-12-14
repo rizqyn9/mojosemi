@@ -1,7 +1,5 @@
-import React from 'react'
-
-
 const links: string[] = ["Menu1", "Menu2"]
+
 export default function Nav() {
     return (
         <nav>

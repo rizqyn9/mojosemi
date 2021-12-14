@@ -1,20 +1,26 @@
 #home {
     width: 100%;
-    .hero-container {
+
+    .card-section{
         width: 100%;
-        min-height: 70vh;
-        
-        background-color: black;
-    }
 
-    .home-card-section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
+        @extend .base-wrapper__height;
 
-        .card-container {
-            background-color: red;
+         .card-section__title {
+            width: 100%;
+            text-align: center;
+            font-size: 3rem;
+
+            font-weight: bolder;
+        }
+
+        .home-card-section {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
         }
     }
 }
