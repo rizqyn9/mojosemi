@@ -6,7 +6,6 @@ export function Hero() {
         <Carousel>
             <CarouselItem/>
             <CarouselItem/>
-            <CarouselItem/>
         </Carousel>
     )
 }
@@ -19,7 +18,7 @@ function CarouselItem(props: ICarouselItem) {
     return (
         <div 
             className="img-container" 
-            style={{background: `url(${props.imgPath ? props.imgPath : 'img1.jpg'})`}}>
+            style={{background: `url(${props.imgPath ? props.imgPath : 'logo.png'})`}}>
         </div>
     )
 }
