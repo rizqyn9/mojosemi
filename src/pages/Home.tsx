@@ -36,21 +36,21 @@ const PromosiAkhirTahun: IHomeCardSection = {
     title: "Promo Akhir Tahun",
     homeCard : [
         {
-            title: "haha1",
-            bgImgPath: "img1.jpg",
+            title: "PAT 1",
+            bgImgPath: "logo.png",
             link: "/",
             subTitle: "Pesan Sekarang"
         },
         {
-            title: "haha1",
-            bgImgPath: "img2.jpg",
+            title: "PAT 2",
+            bgImgPath: "logo.png",
             link: "/",
             subTitle: "Pesan Sekarang"
         },
         {
-            title: "haha1",
-            bgImgPath: "img3.jpg",
-            link: "",
+            title: "PAT 3",
+            bgImgPath: "logo.png",
+            link: "/",
             subTitle: "Pesan Sekarang"
         },
     ]
@@ -60,21 +60,21 @@ const PromosiSpesial: IHomeCardSection = {
     title: "Promo Spesial",
     homeCard : [
         {
-            title: "haha1",
-            bgImgPath: "img1.jpg",
+            title: "PS 1",
+            bgImgPath: "logo.png",
             link: "/",
             subTitle: "Pesan Sekarang"
         },
         {
-            title: "haha1",
-            bgImgPath: "img2.jpg",
+            title: "PS 2",
+            bgImgPath: "logo.png",
             link: "/",
             subTitle: "Pesan Sekarang"
         },
         {
-            title: "haha1",
-            bgImgPath: "img3.jpg",
-            link: "",
+            title: "PS 3",
+            bgImgPath: "logo.png",
+            link: "/",
             subTitle: "Pesan Sekarang"
         },
     ]
