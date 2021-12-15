@@ -33,7 +33,7 @@ function HomeCardSection(props: IHomeCardSection) {
 
 
 const PromosiSpesial: IHomeCardSection = {
-    title: "Promo Spesial",
+    title: "Promo Akhir Tahun",
     homeCard : [
         {
             title: "haha1",
