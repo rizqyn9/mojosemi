@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <div id='home'>
             <Hero/>
-            <HomeCardSection {...PromosiSpesial}/>
+            <HomeCardSection {...PromosiAkhirTahun}/>
             <HomeCardSection {...PromosiSpesial}/>
         </div>
     )
@@ -32,8 +32,32 @@ function HomeCardSection(props: IHomeCardSection) {
 }
 
 
-const PromosiSpesial: IHomeCardSection = {
+const PromosiAkhirTahun: IHomeCardSection = {
     title: "Promo Akhir Tahun",
+    homeCard : [
+        {
+            title: "haha1",
+            bgImgPath: "img1.jpg",
+            link: "/",
+            subTitle: "Pesan Sekarang"
+        },
+        {
+            title: "haha1",
+            bgImgPath: "img2.jpg",
+            link: "/",
+            subTitle: "Pesan Sekarang"
+        },
+        {
+            title: "haha1",
+            bgImgPath: "img3.jpg",
+            link: "",
+            subTitle: "Pesan Sekarang"
+        },
+    ]
+}
+
+const PromosiSpesial: IHomeCardSection = {
+    title: "Promo Spesial",
     homeCard : [
         {
             title: "haha1",
