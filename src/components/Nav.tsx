@@ -5,7 +5,7 @@ const links: string[] = ["Menu1", "Menu2"]
 export default function Nav() {
     return (
         <nav>
-            <div className="logo">Mojosemi</div>
+            <Link to={"/"} className="logo">Mojosemi</Link>
             <div className="nav-link-container">
                 {
                     links.map((val, i) => <Link to={val} key={i}>{val}</Link>)
