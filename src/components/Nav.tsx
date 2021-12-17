@@ -3,18 +3,18 @@ import { Link } from "react-router-dom"
 const linkList: ILinkNav[] = [
     {
         title: "HARGA TIKET & JADWAL",
-        to: "/infotiket.html"
+        to: "/infoticket"
     },
     {
         title: "BELI TIKET",
-        to: "/beli.html"
+        to: "/beliticket"
     }
 ]
 
 export default function Nav() {
     return (
         <nav>
-            <img src="logo.png" width="95" height="75" alt="" className="logo"></img>
+            <img src="/logo.png" width="95" height="75" alt="" className="logo"></img>
             <div className="nav-link-container">
                 {
                     linkList.map((val, i) => {

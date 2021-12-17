@@ -18,9 +18,3 @@ function ListFooterContainer() {
         </div>
     )
 }
-
-// function ListFooterContainerItem() {
-//     return(
-
-//     )
-// }
