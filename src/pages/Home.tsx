@@ -1,4 +1,5 @@
 import { CardLink, ICardLink } from "../components/Card";
+import { Footer } from "../components/Footer";
 import { Hero } from "../components/Hero";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
             <HomeCardSection {...Promo}/>
             <HomeCardSection {...LayananKami}/>
             <HomeCardSection {...HubungiKami}/>
+            <Footer/>
         </div>
     )
 }

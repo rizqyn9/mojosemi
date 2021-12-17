@@ -1,6 +1,6 @@
 nav {
-    background-color: whitesmoke;
-    min-height: 3rem;
+    background-color: white;
+    min-height: max-content;
     padding: 0 3rem 0 3rem;
     position: static;
 
@@ -8,12 +8,35 @@ nav {
     align-items: center;
     justify-content: space-between;
 
+    .logo {
+        max-width: 4rem;
+        height: auto;
+    }
+
     .nav-link-container {
         min-width: 10rem;
+        height: 100%;
 
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-    }
+        gap: 2rem;
 
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .link-nav {
+            text-decoration: none;
+            font-weight: bold;
+            padding: .5em 1em .5em 1em;
+
+            &:hover {
+                border-radius: 8px;
+                background-color: rgb(41, 41, 197);
+                color: white;
+            }
+        }
+    } 
 }
