@@ -1,7 +1,7 @@
 export default function InfoTicket(){
     return (
         <div className="">
-            INFO TICKET
+            PAGE OF INFO TIKET
         </div>
     )
 }

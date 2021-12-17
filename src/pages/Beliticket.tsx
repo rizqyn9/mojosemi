@@ -1,7 +1,7 @@
 export default function BeliTicket(){
     return (
         <div className="">
-            BELI TICKET
+            PAGE OF BELI TICKET
         </div>
     )
 }
