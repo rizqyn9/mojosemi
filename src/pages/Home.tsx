@@ -36,22 +36,22 @@ const PromoA: IHomeCardSection = {
     title: "Promo Tahun Baru",
     homeCard : [
         {
-            title: "PA 1",
+            title: "SOON !",
             bgImgPath: "logo.png",
+            link: "/",
+            subTitle: ""
+        },
+        {
+            title: "MODERN CAMP",
+            bgImgPath: "PA2.jpg",
             link: "/",
             subTitle: "Pesan Sekarang"
         },
         {
-            title: "PA 2",
+            title: "SOON !",
             bgImgPath: "logo.png",
             link: "/",
-            subTitle: "Pesan Sekarang"
-        },
-        {
-            title: "PA 3",
-            bgImgPath: "logo.png",
-            link: "/",
-            subTitle: "Pesan Sekarang"
+            subTitle: ""
         },
     ]
 }

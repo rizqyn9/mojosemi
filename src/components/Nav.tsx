@@ -6,7 +6,6 @@ export default function Nav() {
     return (
         <nav>
             <img src="logo.png" width="95" height="75" alt="" className="logo"></img>
-            <Link to={"/"} className="logo">Mojosemi</Link>
             <div className="nav-link-container">
                 {
                     links.map((val, i) => <Link to={val} key={i}>{val}</Link>)
