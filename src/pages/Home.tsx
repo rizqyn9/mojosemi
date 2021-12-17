@@ -38,7 +38,7 @@ function HomeCardSection(props: IHomeCardSection) {
 function ContactSection() {
     return (
         <section className="contact-section">
-            <h2 className="card-section__title">Hubungi Kami</h2>
+            <h2 className="card-section__title" style={{fontSize:'30px'}}>Hubungi Kami</h2>
             <div className="contact-list-item-container">
                 {
                     ContactList.map((val, i) => {
@@ -67,7 +67,7 @@ const Promo: IHomeCardSection = {
             title: "MODERN CAMP",
             bgImgPath: "PA2.jpg",
             link: "/",
-            subTitle: "Pesan Sekarang"
+            subTitle: "Baca Selengkapnya & Pesan Sekarang >"
         },
         {
             title: "SOON !",
@@ -85,19 +85,19 @@ const LayananKami: IHomeCardSection = {
             title: "FAMILY CAMP",
             bgImgPath: "LK1.jpg",
             link: "/",
-            subTitle: "Pesan Sekarang"
+            subTitle: "Baca Selengkapnya & Pesan Sekarang >"
         },
         {
             title: "DINO SHOW",
             bgImgPath: "LK2.jpg",
             link: "/",
-            subTitle: "Pesan Sekarang"
+            subTitle: "Baca Selengkapnya & Pesan Sekarang >"
         },
         {
             title: "WISATA VIRTUAL",
             bgImgPath: "LK3.jpg",
             link: "/",
-            subTitle: "Pesan Sekarang"
+            subTitle: "Baca Selengkapnya & Pesan Sekarang >"
         },
         {
             title: "SOON !",
@@ -111,9 +111,18 @@ const LayananKami: IHomeCardSection = {
 const ContactList: IContactItem[] = [
     {
         imgPath: "facebook.png",
-        to: "https://youtube.com"
-    }
+        to: "https://facebook.com/mojosemidinosauruspark"
+    },
+    {
+        imgPath: "instagram.png",
+        to: "https://instagram.com/mojosemiforestpark"
+    },
+    {
+        imgPath: "whatsapp.png",
+        to: "https://wa.me/628113783000"
+    },
 ] 
+
 
 const HubungiKami: IHomeCardSection = {
     title: "Hubungi Kami",

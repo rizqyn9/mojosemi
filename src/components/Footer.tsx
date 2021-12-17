@@ -1,7 +1,7 @@
 export function Footer() {
     return (
         <footer>
-            copyright Maula PBB & Rdev
+            Copyrigiht xxx
         </footer>
     )
 }
