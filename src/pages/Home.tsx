@@ -7,6 +7,7 @@ export default function Home() {
             <Hero/>
             <HomeCardSection {...Promo}/>
             <HomeCardSection {...LayananKami}/>
+            <HomeCardSection {...HubungiKami}/>
         </div>
     )
 }
@@ -81,6 +82,30 @@ const LayananKami: IHomeCardSection = {
             title: "SOON !",
             bgImgPath: "logo.png",
             link: "/",
+            subTitle: ""
+        },
+    ]
+}
+
+const HubungiKami: IHomeCardSection = {
+    title: "Hubungi Kami",
+    homeCard : [
+        {
+            title: "",
+            bgImgPath: "facebook.png",
+            link: "/",
+            subTitle: ""
+        },
+        {
+            title: "",
+            bgImgPath: "instagram.png",
+            link: "/",
+            subTitle: ""
+        },
+        {
+            title: "",
+            bgImgPath: "whatsapp.png",
+            link: "",
             subTitle: ""
         },
     ]
