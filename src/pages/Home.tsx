@@ -5,8 +5,8 @@ export default function Home() {
     return (
         <div id='home'>
             <Hero/>
-            <HomeCardSection {...PromoA}/>
-            <HomeCardSection {...PromoB}/>
+            <HomeCardSection {...Promo}/>
+            <HomeCardSection {...LayananKami}/>
         </div>
     )
 }
@@ -32,7 +32,7 @@ function HomeCardSection(props: IHomeCardSection) {
 }
 
 
-const PromoA: IHomeCardSection = {
+const Promo: IHomeCardSection = {
     title: "Promo Tahun Baru",
     homeCard : [
         {
@@ -56,26 +56,32 @@ const PromoA: IHomeCardSection = {
     ]
 }
 
-const PromoB: IHomeCardSection = {
-    title: "Promo Spesial",
+const LayananKami: IHomeCardSection = {
+    title: "Layanan Kami",
     homeCard : [
         {
-            title: "PB 1",
-            bgImgPath: "logo.png",
+            title: "FAMILY CAMP",
+            bgImgPath: "LK1.jpg",
             link: "/",
             subTitle: "Pesan Sekarang"
         },
         {
-            title: "PB 2",
-            bgImgPath: "logo.png",
+            title: "DINO SHOW",
+            bgImgPath: "LK2.jpg",
             link: "/",
             subTitle: "Pesan Sekarang"
         },
         {
-            title: "PB 3",
-            bgImgPath: "logo.png",
+            title: "WISATA VIRTUAL",
+            bgImgPath: "LK3.jpg",
             link: "/",
             subTitle: "Pesan Sekarang"
+        },
+        {
+            title: "SOON !",
+            bgImgPath: "logo.png",
+            link: "/",
+            subTitle: ""
         },
     ]
 }
