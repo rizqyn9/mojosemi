@@ -3,11 +3,11 @@ import { Link } from "react-router-dom"
 const linkList: ILinkNav[] = [
     {
         title: "HARGA TIKET & JADWAL",
-        to: "/infotiket/"
+        to: "/infotiket.html"
     },
     {
-        title: "PESAN TIKET",
-        to: "/pesan/"
+        title: "BELI TIKET",
+        to: "/beli.html"
     }
 ]
 
