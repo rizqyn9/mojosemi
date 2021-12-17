@@ -4,8 +4,9 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 export function Hero() {
     return (
         <Carousel>
-            <CarouselItem imgPath="logo.png"/>
-            <CarouselItem imgPath="sampul.jpg"/>
+            {/* <CarouselItem imgPath="logo.png"/> */}
+            <CarouselItem imgPath="sampul1.jpg"/>
+            <CarouselItem imgPath="sampul2.jpg"/>
         </Carousel>
     )
 }
@@ -16,9 +17,8 @@ interface ICarouselItem {
 
 function CarouselItem(props: ICarouselItem) {
     return (
-        <div 
-            className="img-container" 
-            style={{background: `url(${props.imgPath})`}}>
+        <div className="img-container" >
+            <img src={props.imgPath}/>
         </div>
     )
 }
