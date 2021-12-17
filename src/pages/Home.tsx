@@ -66,7 +66,7 @@ const Promo: IHomeCardSection = {
         {
             title: "MODERN CAMP",
             bgImgPath: "PA2.jpg",
-            link: "/",
+            link: "/moderncamp",
             subTitle: "Baca Selengkapnya & Pesan Sekarang >"
         },
         {
@@ -84,19 +84,19 @@ const LayananKami: IHomeCardSection = {
         {
             title: "FAMILY CAMP",
             bgImgPath: "LK1.jpg",
-            link: "/",
+            link: "/familycamp",
             subTitle: "Baca Selengkapnya & Pesan Sekarang >"
         },
         {
             title: "DINO SHOW",
             bgImgPath: "LK2.jpg",
-            link: "/",
+            link: "/dinoshow",
             subTitle: "Baca Selengkapnya & Pesan Sekarang >"
         },
         {
             title: "WISATA VIRTUAL",
             bgImgPath: "LK3.jpg",
-            link: "/",
+            link: "/wisatavirtual",
             subTitle: "Baca Selengkapnya & Pesan Sekarang >"
         },
         {
