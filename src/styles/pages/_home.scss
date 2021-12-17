@@ -23,4 +23,17 @@
             gap: 1rem;
         }
     }
+
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .contact-list-item-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }

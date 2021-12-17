@@ -1,4 +1,5 @@
 import { CardLink, ICardLink } from "../components/Card";
+import { ContactItem, IContactItem } from "../components/Contact";
 import { Footer } from "../components/Footer";
 import { Hero } from "../components/Hero";
 
@@ -8,7 +9,7 @@ export default function Home() {
             <Hero/>
             <HomeCardSection {...Promo}/>
             <HomeCardSection {...LayananKami}/>
-            <HomeCardSection {...HubungiKami}/>
+            <ContactSection/>
             <Footer/>
         </div>
     )
@@ -27,6 +28,24 @@ function HomeCardSection(props: IHomeCardSection) {
                 {
                     props.homeCard.map((val, i) => {
                         return <CardLink {...val} key={i}/>
+                    })
+                }
+            </div>
+        </section>
+    )
+}
+
+function ContactSection() {
+    return (
+        <section className="contact-section">
+            <h2 className="card-section__title">Hubungi Kami</h2>
+            <div className="contact-list-item-container">
+                {
+                    ContactList.map((val, i) => {
+                        return <ContactItem 
+                                    to={val.to} 
+                                    imgPath={val.imgPath}
+                                />
                     })
                 }
             </div>
@@ -88,6 +107,13 @@ const LayananKami: IHomeCardSection = {
         },
     ]
 }
+
+const ContactList: IContactItem[] = [
+    {
+        imgPath: "facebook.png",
+        to: "https://youtube.com"
+    }
+] 
 
 const HubungiKami: IHomeCardSection = {
     title: "Hubungi Kami",
