@@ -23,7 +23,7 @@ interface IHomeCardSection {
 function HomeCardSection(props: IHomeCardSection) {
     return (
         <section className="card-section">
-            <h2 className="card-section__title">{props.title}</h2>
+            <h2 className="card-section__title"style={{fontSize:'30px'}}>{props.title}</h2>
             <div className="home-card-section">
                 {
                     props.homeCard.map((val, i) => {
@@ -35,10 +35,12 @@ function HomeCardSection(props: IHomeCardSection) {
     )
 }
 
+
+
 function ContactSection() {
     return (
         <section className="contact-section">
-            <h2 className="card-section__title" style={{fontSize:'30px'}}>Hubungi Kami</h2>
+            <h2 className="card-section__title" style={{fontSize:'20px'}}>Hubungi Kami</h2>
             <div className="contact-list-item-container">
                 {
                     ContactList.map((val, i) => {

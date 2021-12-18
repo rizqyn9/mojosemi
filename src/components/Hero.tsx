@@ -7,6 +7,7 @@ export function Hero() {
             {/* <CarouselItem imgPath="logo.png"/> */}
             <CarouselItem imgPath="sampul1.jpg"/>
             <CarouselItem imgPath="sampul2.jpg"/>
+            <CarouselItem imgPath="sampul3.jpg"/>
         </Carousel>
     )
 }
