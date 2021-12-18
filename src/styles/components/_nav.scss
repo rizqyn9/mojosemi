@@ -9,7 +9,7 @@ nav {
     justify-content: space-between;
 
     .logo {
-        max-width: 4rem;
+        max-width: 5rem;
         height: auto;
     }
 
@@ -34,7 +34,7 @@ nav {
 
             &:hover {
                 border-radius: 8px;
-                background-color: rgb(41, 41, 197);
+                background-color: green;
                 color: white;
             }
         }

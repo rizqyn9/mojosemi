@@ -1,7 +1,7 @@
 export function Footer() {
     return (
         <footer>
-            Copyrigiht xxx
+            Copyright Mojosemi @2021
         </footer>
     )
 }
