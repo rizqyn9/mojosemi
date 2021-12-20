@@ -19,3 +19,16 @@ body {
 
     font-weight: bolder;
 }
+
+.base-btn {
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 1.1em;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(2, 87, 2);
+    }
+}

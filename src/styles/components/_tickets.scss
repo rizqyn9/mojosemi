@@ -1,0 +1,73 @@
+.ticket-item-container {
+    padding: 1rem;
+    max-width: 45rem;
+    
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
+    box-shadow: 0px 0px 3px grey;
+    border-radius: 8px;
+
+    .img-container {
+        flex: 1 1 25%;
+        max-width: 10rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .content {
+        flex: 1 1 auto;
+
+        justify-self: flex-start;
+        align-self: flex-start;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: .6em;
+        padding: 0 1rem 0 1rem;
+
+        p {
+            margin: 0;
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+        
+        .price {
+            font-style: italic;
+            font-size: .8em;
+            
+            span {
+                font-style: normal;
+                margin-left: 1rem;
+            }
+        }
+        
+        .desc {
+        }
+    }
+
+    .btn-container {
+        flex: 1 1 25%;
+        button {
+            border: none;
+            color: white;
+            background-color: green;
+            border-radius: 4px;
+            min-width: 5rem;
+            padding: .5em 1em .5em 1em;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgb(38, 190, 38);
+                box-shadow: 1px 1px 3px grey;
+            }
+        }
+    }
+}

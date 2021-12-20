@@ -1,7 +1,12 @@
+a {
+    width: max-content;
+    max-width: 100%;
+}
+
 .card-container {
     height: 13rem;
     width: 28rem;
-
+    max-width: 100%;
     border-radius: 8px;
 
     display: grid;
