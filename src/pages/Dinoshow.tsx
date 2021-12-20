@@ -4,10 +4,9 @@ import { Footer } from "../components/Footer";
 
 export default function DinoShow(){
     return (
-        <div id='dinoshow'>
-        <HomeCardSection {...Dinoshow}/>
-        <Footer/>
-    </div>
+        <section id='dinoshow' className="page">
+            <HomeCardSection {...Dinoshow}/>
+        </section>
     )
 }
 interface IHomeCardSection {

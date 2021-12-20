@@ -4,10 +4,10 @@ import { Footer } from "../components/Footer";
 
 export default function ModernCamp(){
     return (
-        <div id='moderncamp'>
-        <HomeCardSection {...Moderncamp}/>
-        <Footer/>
-    </div>
+        <section id='moderncamp'>
+            <HomeCardSection {...Moderncamp}/>
+            <Footer/>
+        </section>
     )
 }
 interface IHomeCardSection {

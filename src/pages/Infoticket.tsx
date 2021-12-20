@@ -1,15 +1,14 @@
 import classNames from "classnames";
 import { atom, useAtom} from "jotai";
-import { useEffect, useState } from "react";
-import { Footer } from "../components/Footer";
+import React, { useEffect, useState } from "react";
+import { ticketsContent } from "../Data";
 
 export default function InfoTicket(){
     return (
-        <div id='infoticket'>
-            <h1 className="title">HARGA TIKET & JADWAL</h1>
+        <section id='infoticket'>
+            <h1 className="title">HARGA TIKET</h1>
             <TicketContainer/>
-            <Footer/>
-        </div>
+        </section>
     )
 }
 
@@ -24,7 +23,7 @@ function TicketContainer() {
     )
 }
 
-interface ITicketItem {
+export interface ITicketItem {
     imgPath: string;
     title: string;
     date: string;
@@ -50,7 +49,7 @@ function TicketItem(props: ITicketItem) {
             </div>
             <div className="content">
                 <p className="title">{props.title}</p>
-                <p className="price">Rp {props.price} <span>{props.date}</span></p>
+                <p className="price"><span>Rp {props.price} / Tiket</span>{props.date}</p>
                 <p className="desc">{props.desc}</p>
             </div>
             <div className="btn-container">
@@ -89,14 +88,16 @@ function Overlay() {
         setIsActive(false) 
     }
     
-    const buyHandler = () => {
-        if(!data) return;
-        setLink(
-            generateLink({
-                count,
-                ...data
-            })
-        )
+    const buyHandler = (e: React.MouseEvent<HTMLAnchorElement>) => {
+        if(count <= 0 || !data) {
+            e.preventDefault()
+            return;
+        }
+        let res = generateLink({
+            count,
+            ...data
+        })
+        setLink( res)
     }
 
     return (
@@ -105,39 +106,25 @@ function Overlay() {
                 <button className="btn-close" onClick={closeHandler}>X</button>
                 <img src={data?.imgPath} />
                 <h1 className="title">{data?.title}</h1>
-                <p className="price">Rp. {data?.price}</p>
+                <p className="price">Rp {data?.price} / Tiket</p>
+                <p>Jumlah Tiket</p>
                 <div className="btn-container">
                     <button onClick={() => clickHandler(TypeButton.DECREMENT)}>-</button>
                     <p>{count}</p>
                     <button onClick={() => clickHandler(TypeButton.INCREMENT)}>+</button>
                 </div>
-                <a className="btn-buy" href={link || ""} target="_blank" onClick={buyHandler}>Beli</a>
+                <a 
+                    className={classNames("btn-buy", {disabled: count <= 0})} 
+                    href={link || ""} 
+                    target="_blank" 
+                    onClick={buyHandler}
+                >
+                    Beli
+                </a>
             </div>
         </div>
     )
 }
-
-const ticketsContent: ITicketItem[] = [
-    {
-        imgPath: "logo.png",
-        title:"asdsa",
-        date: " Senin - Jum'at",
-        price: "10.000",
-        link: "",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, doloremque."
-    },
-    {
-        imgPath: "logo.png",
-        title:"Test2",
-        date: " Senin - Jum'at",
-        price: "10.000",
-        link: "",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, doloremque."
-    }
-] 
-
-
-let tempWA = "https://api.whatsapp.com/send?phone=628985665498&text=TIKET%20%5BJUDUL%5D%0D%0AHARGA%20%3A%20%5Bprice%5D%20%2F%20tiket%0D%0AJUMLAH%20%3A%20%5Bcount%5D%20tiket"
 
 let numWA: string = "6281327844939"
 interface IGenLink {
@@ -145,8 +132,26 @@ interface IGenLink {
     price: string;
     count: number;
 }
+
 function generateLink(props: IGenLink): string {
-    let test = `https://api.whatsapp.com/send?phone=${numWA}&text=TIKET%20${props.title}%0D%0AHARGA%20%3A%20${props.price}%20%2F%20tiket%0D%0AJUMLAH%20%3A%20${props.count}%20tiket`
-    console.log(test);
-    return test;
+    const WA_URL = "https://api.whatsapp.com/send?phone="
+    let total = parseInt(props.price.replace(".", "")) * props.count;
+    let msg = `
+    @@ MOJOSEMI FOREST PARK
+    - - - - - - - - - -
+    TIKET : ${props.title}
+    HARGA : ${props.price} / TIKET
+    JUMLAH : ${props.count} TIKET
+    TOTAL PEMBAYARAN : ${new Intl.NumberFormat('id', {
+        style: 'currency',
+        currency: 'IDR'
+    }).format(total)}
+    - - - - - - - - - -
+    
+    Hubungi Admin jika ada perubahan dalam pemesanan tiket.
+    Whatsapp : 0811-3783-000
+    *BELI TIKET HANYA DI WWW.MOJOSEMIFORESTPARK.COM*
+    `
+    let parseMsg = encodeURI(msg)
+    return WA_URL.concat(numWA, "&text=", parseMsg);
 }

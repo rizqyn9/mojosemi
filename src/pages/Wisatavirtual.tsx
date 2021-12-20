@@ -4,10 +4,10 @@ import { Footer } from "../components/Footer";
 
 export default function WisataVirtual(){
     return (
-        <div id='wisatavirtual'>
-        <HomeCardSection {...Wisatavirtual}/>
-        <Footer/>
-    </div>
+        <section id='wisatavirtual'>
+            <HomeCardSection {...Wisatavirtual}/>
+            <Footer/>
+        </section>
     )
 }
 interface IHomeCardSection {

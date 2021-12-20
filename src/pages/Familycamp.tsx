@@ -4,10 +4,10 @@ import { Footer } from "../components/Footer";
 
 export default function FamilyCamp(){
     return (
-        <div id='familycamp'>
-        <HomeCardSection {...Familycamp}/>
-        <Footer/>
-    </div>
+        <section id='familycamp'>
+            <HomeCardSection {...Familycamp}/>
+            <Footer/>
+        </section>
     )
 }
 interface IHomeCardSection {

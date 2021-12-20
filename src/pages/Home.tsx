@@ -5,13 +5,13 @@ import { Hero } from "../components/Hero";
 
 export default function Home() {
     return (
-        <div id='home'>
+        <section id='home'>
             <Hero/>
             <HomeCardSection {...Promo}/>
             <HomeCardSection {...LayananKami}/>
             <ContactSection/>
             <Footer/>
-        </div>
+        </section>
     )
 }
 
@@ -47,6 +47,7 @@ function ContactSection() {
                         return <ContactItem 
                                     to={val.to} 
                                     imgPath={val.imgPath}
+                                    key={i}
                                 />
                     })
                 }
