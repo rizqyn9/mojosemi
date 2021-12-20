@@ -126,7 +126,7 @@ function Overlay() {
     )
 }
 
-let numWA: string = "6281327844939"
+let numWA: string = "628113783000"
 interface IGenLink {
     title: string;
     price: string;

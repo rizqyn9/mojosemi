@@ -1,12 +1,10 @@
 import { CardLink, ICardLink } from "../components/Card";
 import { ContactItem, IContactItem } from "../components/Contact";
-import { Footer } from "../components/Footer";
 
 export default function WisataVirtual(){
     return (
-        <section id='wisatavirtual'>
+        <section id='wisatavirtual' className="page">
             <HomeCardSection {...Wisatavirtual}/>
-            <Footer/>
         </section>
     )
 }

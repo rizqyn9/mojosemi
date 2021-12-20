@@ -17,6 +17,8 @@
 
         img {
             width: 100%;
+            padding: 1px;
+            border-radius: 8px;
         }
     }
 
@@ -31,6 +33,7 @@
         align-items: flex-start;
         gap: .6em;
         padding: 0 1rem 0 1rem;
+        
 
         p {
             margin: 0;
@@ -55,15 +58,11 @@
                 margin-right: 1rem;
             }
         }
-        
-        .desc {
-            // background-color: red;
-        }
     }
 
     .btn-container {
         flex: 1 1 10%;
-        
+
         button {
             border: none;
             color: white;

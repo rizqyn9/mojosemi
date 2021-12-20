@@ -2,7 +2,7 @@ import { ITicketItem } from "./pages/Infoticket";
 
 export const ticketsContent: ITicketItem[] = [
     {
-        imgPath: "logo.png",
+        imgPath: "LK2.jpg",
         title:"Dino Show",
         date: "Sabtu, Minggu dan Hari Libur",
         price: "15.000",
@@ -10,7 +10,7 @@ export const ticketsContent: ITicketItem[] = [
         desc: "Deskripsi."
     },
     {
-        imgPath: "logo.png",
+        imgPath: "atv.jpg",
         title:"ATV",
         date: "Setiap Hari",
         price: "30.000",
@@ -20,39 +20,39 @@ export const ticketsContent: ITicketItem[] = [
     {
         imgPath: "logo.png",
         title:"Low Rope",
-        date: "-----",
+        date: "Unknow",
         price: "30.000",
         link: "",
         desc: "Deskripsi."
     },
     {
-        imgPath: "logo.png",
+        imgPath: "berkuda.jpg",
         title:"Berkuda",
-        date: "-----",
+        date: "Unknow",
         price: "50.000",
         link: "",
         desc: "Deskripsi."
     },
     {
-        imgPath: "logo.png",
+        imgPath: "jltshort.png",
         title:"Jeep Lawu Tour (Short Trip)",
-        date: "-----",
+        date: "Unknow",
         price: "350.000",
         link: "",
         desc: "Deskripsi."
     },
     {
-        imgPath: "logo.png",
+        imgPath: "jltmedium.jpg",
         title:"Jeep Lawu Tour (Medium Trip)",
-        date: "-----",
+        date: "Unknow",
         price: "450.000",
         link: "",
         desc: "Deskripsi."
     },
     {
-        imgPath: "logo.png",
+        imgPath: "jltlong.jpg",
         title:"Jeep Lawu Tour (Long Trip)",
-        date: "-----",
+        date: "Unknow",
         price: "550.000",
         link: "",
         desc: "Deskripsi."
@@ -83,7 +83,7 @@ export const ticketsContent: ITicketItem[] = [
     },
     {
         imgPath: "logo.png",
-        title:"Daart Board",
+        title:"Dart Board",
         date: "Setiap Hari",
         price: "10.000",
         link: "",

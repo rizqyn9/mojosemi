@@ -10,7 +10,6 @@ export default function Home() {
             <HomeCardSection {...Promo}/>
             <HomeCardSection {...LayananKami}/>
             <ContactSection/>
-            <Footer/>
         </section>
     )
 }

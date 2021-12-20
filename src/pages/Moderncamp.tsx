@@ -1,12 +1,10 @@
 import { CardLink, ICardLink } from "../components/Card";
 import { ContactItem, IContactItem } from "../components/Contact";
-import { Footer } from "../components/Footer";
 
 export default function ModernCamp(){
     return (
         <section id='moderncamp'>
             <HomeCardSection {...Moderncamp}/>
-            <Footer/>
         </section>
     )
 }
