@@ -3,7 +3,7 @@ import { ContactItem, IContactItem } from "../components/Contact";
 
 export default function ModernCamp(){
     return (
-        <section id='moderncamp'>
+        <section id='moderncamp' className='page'>
             <HomeCardSection {...Moderncamp}/>
         </section>
     )
