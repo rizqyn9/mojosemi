@@ -1,6 +1,5 @@
 import { CardLink, ICardLink } from "../components/Card";
 import { ContactItem, IContactItem } from "../components/Contact";
-import { Footer } from "../components/Footer";
 import { Hero } from "../components/Hero";
 
 export default function Home() {

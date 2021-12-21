@@ -6,7 +6,7 @@ import { ticketsContent } from "../Data";
 export default function InfoTicket(){
     return (
         <section id='infoticket'>
-            <h1 className="title">HARGA TIKET</h1>
+            <h1 className="title">TIKET WAHANA</h1>
             <TicketContainer/>
         </section>
     )

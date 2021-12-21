@@ -17,10 +17,8 @@ nav {
     .nav-link-container {
         min-width: 10rem;
         height: 100%;
-        background-color: green;
         color: white;
-        padding: 1px;
-        border-radius: 8px;
+
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -29,6 +27,9 @@ nav {
         a {
             text-decoration: none;
             color: inherit;
+            background-color: green;
+            padding: 1px;
+            border-radius: 8px;
         }
 
         .link-nav {

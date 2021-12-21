@@ -1,8 +1,12 @@
-import { Link } from "react-router-dom"
+import { Link, useHref } from "react-router-dom"
 
 const linkList: ILinkNav[] = [
     {
-        title: "INFORMASI & BELI TIKET",
+        title: "Reservasi Penginapan",
+        to: "xxxx"
+    },
+    {
+        title: "Tiket Wahana",
         to: "/infoticket"
     },
 ]
