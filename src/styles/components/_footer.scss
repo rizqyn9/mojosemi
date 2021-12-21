@@ -1,8 +1,14 @@
 footer {
-    min-height: 5vh;
+    min-height: 5rem;
+    margin-top: 3rem;
     font-size: 1rem;
-    text-align: center;
+
     font-weight: bold;
     color: white;
     background-color: green;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

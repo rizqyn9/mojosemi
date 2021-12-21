@@ -34,8 +34,6 @@ function HomeCardSection(props: IHomeCardSection) {
     )
 }
 
-
-
 function ContactSection() {
     return (
         <section className="contact-section">

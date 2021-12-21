@@ -9,22 +9,24 @@ const linkList: ILinkNav[] = [
 
 export default function Nav() {
     return (
-        <nav>
-            <Link to={"/"}>
-                <img src="/logo.png" width="95" height="75" alt="" className="logo"></img>
-            </Link>
-            <div className="nav-link-container">
-                {
-                    linkList.map((val, i) => {
-                        return <LinkNav 
-                                    key={i}
-                                    title={val.title}
-                                    to={val.to}
-                                />
-                    })
-                }
-            </div>
-        </nav>
+        <div className="nav-wrapper">
+            <nav>
+                <Link to={"/"}>
+                    <img src="/logo.png" width="95" height="75" alt="" className="logo"></img>
+                </Link>
+                <div className="nav-link-container">
+                    {
+                        linkList.map((val, i) => {
+                            return <LinkNav 
+                                        key={i}
+                                        title={val.title}
+                                        to={val.to}
+                                    />
+                        })
+                    }
+                </div>
+            </nav>
+        </div>
     )
 }
 

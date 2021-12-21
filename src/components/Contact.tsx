@@ -1,5 +1,3 @@
-
-
 export interface IContactItem {
     imgPath: string;
     to: string;
