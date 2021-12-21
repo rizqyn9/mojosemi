@@ -7,7 +7,7 @@ export const ticketsContent: ITicketItem[] = [
         date: "Sabtu, Minggu dan Hari Libur",
         price: "15.000",
         link: "",
-        desc: "Deskripsi."
+        desc: ""
     },
     {
         imgPath: "atv.jpg",
@@ -15,15 +15,15 @@ export const ticketsContent: ITicketItem[] = [
         date: "Setiap Hari",
         price: "30.000",
         link: "",
-        desc: "Deskripsi."
+        desc: ""
     },
     {
-        imgPath: "logo.png",
+        imgPath: "lowrope.jpg",
         title:"Low Rope",
         date: "Unknow",
         price: "30.000",
         link: "",
-        desc: "Deskripsi."
+        desc: ""
     },
     {
         imgPath: "berkuda.jpg",
@@ -31,7 +31,7 @@ export const ticketsContent: ITicketItem[] = [
         date: "Unknow",
         price: "50.000",
         link: "",
-        desc: "Deskripsi."
+        desc: ""
     },
     {
         imgPath: "jltshort.png",
@@ -39,7 +39,7 @@ export const ticketsContent: ITicketItem[] = [
         date: "Unknow",
         price: "350.000",
         link: "",
-        desc: "Deskripsi."
+        desc: ""
     },
     {
         imgPath: "jltmedium.jpg",
@@ -47,7 +47,7 @@ export const ticketsContent: ITicketItem[] = [
         date: "Unknow",
         price: "450.000",
         link: "",
-        desc: "Deskripsi."
+        desc: ""
     },
     {
         imgPath: "jltlong.jpg",
@@ -55,7 +55,7 @@ export const ticketsContent: ITicketItem[] = [
         date: "Unknow",
         price: "550.000",
         link: "",
-        desc: "Deskripsi."
+        desc: ""
     },
     {
         imgPath: "logo.png",
@@ -63,7 +63,7 @@ export const ticketsContent: ITicketItem[] = [
         date: "Setiap Hari",
         price: "10.000",
         link: "",
-        desc: "Deskripsi."
+        desc: ""
     },
     {
         imgPath: "logo.png",
@@ -71,7 +71,7 @@ export const ticketsContent: ITicketItem[] = [
         date: "Setiap Hari",
         price: "10.000",
         link: "",
-        desc: "Deskripsi."
+        desc: ""
     },
     {
         imgPath: "logo.png",
@@ -79,7 +79,7 @@ export const ticketsContent: ITicketItem[] = [
         date: "Setiap Hari",
         price: "10.000",
         link: "",
-        desc: "Deskripsi."
+        desc: ""
     },
     {
         imgPath: "logo.png",
@@ -87,63 +87,63 @@ export const ticketsContent: ITicketItem[] = [
         date: "Setiap Hari",
         price: "10.000",
         link: "",
-        desc: "Deskripsi."
+        desc: ""
     },
     {
-        imgPath: "logo.png",
+        imgPath: "archery.jpg",
         title:"Archery",
         date: "Setiap Hari",
         price: "30.000",
         link: "",
-        desc: "Deskripsi."
+        desc: ""
     },
     {
-        imgPath: "logo.png",
+        imgPath: "paintball.jpg",
         title:"Paintball (Shoting Target)",
         date: "Setiap Hari",
         price: "30.000",
         link: "",
-        desc: "Deskripsi."
+        desc: ""
     },
     {
-        imgPath: "logo.png",
+        imgPath: "paintballwg.jpg",
         title:"Paintball (War Game)",
         date: "Setiap Hari",
         price: "70.000",
         link: "",
-        desc: "Deskripsi."
+        desc: ""
     },
     {
-        imgPath: "logo.png",
+        imgPath: "agpendek.jpg",
         title:"Airsoft Gun (Laras Pendek)",
         date: "Setiap Hari",
         price: "45.000",
         link: "",
-        desc: "Deskripsi."
+        desc: ""
     },
     {
-        imgPath: "logo.png",
+        imgPath: "agpanjang.jpg",
         title:"Airsoft Gun (Laras Panjang)",
         date: "Setiap Hari",
         price: "55.000",
         link: "",
-        desc: "Deskripsi."
+        desc: ""
     },
     {
-        imgPath: "logo.png",
+        imgPath: "agwar.jpg",
         title:"Airsoft Gun (War Game)",
         date: "Setiap Hari",
         price: "100.000",
         link: "",
-        desc: "Deskripsi."
+        desc: ""
     },
     {
-        imgPath: "logo.png",
+        imgPath: "minijeep.jpg",
         title:"Mini Jeep",
         date: "Setiap Hari",
         price: "30.000",
         link: "",
-        desc: "Deskripsi."
+        desc: ""
     },
     {
         imgPath: "logo.png",
@@ -151,7 +151,7 @@ export const ticketsContent: ITicketItem[] = [
         date: "Setiap Hari",
         price: "30.000",
         link: "",
-        desc: "Deskripsi."
+        desc: ""
     },
     {
         imgPath: "logo.png",
@@ -159,7 +159,7 @@ export const ticketsContent: ITicketItem[] = [
         date: "Setiap Hari",
         price: "25.000",
         link: "",
-        desc: "Deskripsi."
+        desc: ""
     },
     {
         imgPath: "logo.png",
@@ -167,14 +167,14 @@ export const ticketsContent: ITicketItem[] = [
         date: "Setiap Hari",
         price: "15.000",
         link: "",
-        desc: "Deskripsi."
+        desc: ""
     },
     {
-        imgPath: "logo.png",
+        imgPath: "dinoride.jpeg",
         title:"Dino Ride",
         date: "Setiap Hari",
         price: "20.000",
         link: "",
-        desc: "Deskripsi."
+        desc: ""
     },
 ] 
