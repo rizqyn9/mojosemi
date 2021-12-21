@@ -150,6 +150,10 @@ function generateLink(props: IGenLink): string {
     
     Hubungi Admin jika ada perubahan dalam pemesanan tiket.
     Whatsapp : 0811-3783-000
+
+    Untuk informasi penginapan
+    Whatsapp : 0822-3633-5003
+    
     *BELI TIKET HANYA DI WWW.MOJOSEMIFORESTPARK.COM*
     `
     let parseMsg = encodeURI(msg)
