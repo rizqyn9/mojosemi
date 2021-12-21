@@ -1,6 +1,8 @@
 body {
   position: relative;
   font-family: $poppins;
+  width: 100vw;
+  overflow: hidden;
 }
 #root {
   position: relative;
