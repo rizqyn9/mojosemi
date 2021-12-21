@@ -153,9 +153,10 @@ function generateLink(props: IGenLink): string {
 
     Untuk informasi penginapan
     Whatsapp : 0822-3633-5003
-    
+
     *BELI TIKET HANYA DI WWW.MOJOSEMIFORESTPARK.COM*
     `
+    
     let parseMsg = encodeURI(msg)
     return WA_URL.concat(numWA, "&text=", parseMsg);
 }
