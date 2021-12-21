@@ -51,11 +51,15 @@ nav {
 
   @media (max-width: 400px) {
     flex-direction: column;
+    top: 0;
+    left: 0;
   }
 }
 
 .nav-wrapper {
+  position: relative;
   height: 5rem;
+  min-height: max-content;
   width: 100%;
   display: flex;
   align-items: center;
