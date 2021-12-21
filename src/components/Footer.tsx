@@ -1,7 +1,9 @@
-import { SiWhatsapp } from "react-icons/si";
-import { SiMinutemailer } from "react-icons/si";
-import { SiInstagram } from "react-icons/si";
-import { SiFacebook } from "react-icons/si";
+import {
+  SiWhatsapp,
+  SiMinutemailer,
+  SiInstagram,
+  SiFacebook,
+} from "react-icons/si";
 
 export function Footer() {
   return (

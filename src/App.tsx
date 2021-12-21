@@ -1,4 +1,4 @@
-import Nav from "./components/Nav"
+import Nav from "./components/Nav";
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import InfoTicket from "./pages/Infoticket";
@@ -11,7 +11,8 @@ import { Footer } from "./components/Footer";
 function App() {
   return (
     <>
-      <Nav/>
+      {/* <div className="body-background"></div> */}
+      <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="infoticket" element={<InfoTicket />} />
@@ -20,9 +21,9 @@ function App() {
         <Route path="dinoshow" element={<DinoShow />} />
         <Route path="wisatavirtual" element={<WisataVirtual />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

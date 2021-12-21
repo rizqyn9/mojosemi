@@ -1,0 +1,15 @@
+$primary-color: #125c13;
+$secondary-color: #3e7c17;
+$third-color: #f4a442;
+$fourth-color: #e8e1d9;
+$neutral-color: white;
+
+$gradient1: linear-gradient(
+  150deg,
+  rgba(194, 129, 49, 1) 30%,
+  rgba(62, 124, 23, 1) 100%
+);
+
+:root {
+  --nav-height: 5rem;
+}

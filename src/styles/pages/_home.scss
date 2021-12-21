@@ -1,45 +1,40 @@
 #home {
+  width: 100%;
+
+  .card-section {
     width: 100%;
 
-    .card-section{
-        width: 100%;
+    @extend .base__page-wrapper;
+    @extend .base-wrapper__height;
 
-        @extend .base-wrapper__height;
+    .card-section__title {
+      @extend .base__title;
 
-         .card-section__title {
-            width: 100%;
-            text-align: center;
-            font-size: 3rem;
-
-            font-weight: bolder;
-        }
-
-        .home-card-section {
-            position: relative;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-        }
+      margin-bottom: 2rem;
     }
 
-    .contact-section {
-        display: flex;
+    .home-card-section {
+      @extend .flex-center;
+
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  }
+
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .contact-list-item-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media (max-width: 700px) {
         flex-direction: column;
-        width: 100%;
-
-        .contact-list-item-container {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            @media (max-width: 700px) {
-                flex-direction: column;
-            }
-
-
-        }
+      }
     }
+  }
 }
