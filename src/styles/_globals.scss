@@ -1,37 +1,44 @@
 body {
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: $poppins;
+
+  background: linear-gradient(rgb(155, 236, 109), white);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .page {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .base-wrapper__height {
-    padding: {
-        top: 3rem;
-        bottom: 3rem;
-    };
+  padding: {
+    top: 3rem;
+    bottom: 3rem;
+  }
 }
 
 .card-section__title {
-    width: 100%;
-    text-align: center;
-    font-size: 3rem;
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
 
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 .base-btn {
-    border: none;
-    background-color: green;
-    color: white;
-    font-size: 1.1em;
-    border-radius: 4px;
-    cursor: pointer;
+  border: none;
+  background-color: green;
+  color: white;
+  font-size: 1.1em;
+  border-radius: 4px;
+  cursor: pointer;
 
-    &:hover {
-        background-color: rgb(2, 87, 2);
-    }
+  &:hover {
+    background-color: rgb(2, 87, 2);
+  }
 }

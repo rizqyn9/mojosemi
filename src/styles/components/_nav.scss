@@ -1,63 +1,70 @@
 nav {
-    width: 100%;
-    background-color: white;
-    min-height: max-content;
-    padding: 0 3rem 0 3rem;
-    position: static;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.835);
+  box-shadow: 0px 3px 3rem rgba(0, 128, 0, 0.411);
+  border-bottom: 2px solid green;
+  backdrop-filter: 10px;
+  min-height: max-content;
+  height: 100%;
+  padding: 0 3rem 0 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    height: auto;
+    width: 5rem;
+  }
+
+  .nav-link-container {
+    min-width: 10rem;
+    height: 100%;
+    color: white;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 2rem;
 
-    .logo {
-        max-width: 5rem;
-        height: auto;
+    a {
+      text-decoration: none;
+      color: inherit;
+      background-color: green;
+      padding: 1px;
+      border-radius: 8px;
     }
 
-    .nav-link-container {
-        min-width: 10rem;
-        height: 100%;
+    .link-nav {
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: bold;
+      padding: 0.5em 1em 0.5em 1em;
+
+      &:hover {
+        border-radius: 8px;
+        background-color: rgb(3, 187, 3);
         color: white;
-
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        gap: 2rem;
-
-        a {
-            text-decoration: none;
-            color: inherit;
-            background-color: green;
-            padding: 1px;
-            border-radius: 8px;
-        }
-
-        .link-nav {
-            text-decoration: none;
-            font-size: 0.8rem;
-            font-weight: bold;
-            padding: .5em 1em .5em 1em;
-
-            &:hover {
-                border-radius: 8px;
-                background-color: rgb(3, 187, 3);
-                color: white;
-            }
-        }
-    } 
-
-    @media (max-width: 400px) {
-        flex-direction: column;
+      }
     }
+  }
+
+  @media (max-width: 400px) {
+    flex-direction: column;
+  }
 }
 
 .nav-wrapper {
-    height: max-content;
-    width: 100%;
-    display: flex;
-    align-items: center;
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 40;
 
-    @media (max-width: 400px) {
-        padding: 2rem 0 2rem 0;
-    }
+  @media (max-width: 400px) {
+    padding: 2rem 0 2rem 0;
+  }
 }

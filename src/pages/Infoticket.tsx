@@ -133,8 +133,9 @@ interface IGenLink {
     count: number;
 }
 
+export const WA_URL = "https://api.whatsapp.com/send?phone="
+
 function generateLink(props: IGenLink): string {
-    const WA_URL = "https://api.whatsapp.com/send?phone="
     let total = parseInt(props.price.replace(".", "")) * props.count;
     let msg = `
     @@ MOJOSEMI FOREST PARK
@@ -151,7 +152,7 @@ function generateLink(props: IGenLink): string {
     Hubungi Admin jika ada perubahan dalam pemesanan tiket.
     Whatsapp : 0811-3783-000
 
-    Untuk informasi penginapan
+    Hubungi Admin Penginapan Untuk informasi penginapan.
     Whatsapp : 0822-3633-5003
 
     *BELI TIKET HANYA DI WWW.MOJOSEMIFORESTPARK.COM*

@@ -36,18 +36,6 @@ function HomeCardSection(props: IHomeCardSection) {
 function ContactSection() {
     return (
         <section className="contact-section">
-            <h2 className="card-section__title" style={{fontSize:'20px'}}>Hubungi Kami</h2>
-            <div className="contact-list-item-container">
-                {
-                    ContactList.map((val, i) => {
-                        return <ContactItem 
-                                    to={val.to} 
-                                    imgPath={val.imgPath}
-                                    key={i}
-                                />
-                    })
-                }
-            </div>
         </section>
     )
 }

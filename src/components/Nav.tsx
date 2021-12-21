@@ -3,7 +3,7 @@ import { Link, useHref } from "react-router-dom"
 const linkList: ILinkNav[] = [
     {
         title: "Reservasi Penginapan",
-        to: "xxxx"
+        to: ""
     },
     {
         title: "Tiket Wahana",

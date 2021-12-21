@@ -20,7 +20,7 @@ export const ticketsContent: ITicketItem[] = [
     {
         imgPath: "lowrope.jpg",
         title:"Low Rope",
-        date: "Unknow",
+        date: "Setiap Hari",
         price: "30.000",
         link: "",
         desc: ""
@@ -28,7 +28,7 @@ export const ticketsContent: ITicketItem[] = [
     {
         imgPath: "berkuda.jpg",
         title:"Berkuda",
-        date: "Unknow",
+        date: "Setiap Hari",
         price: "50.000",
         link: "",
         desc: ""
@@ -36,7 +36,7 @@ export const ticketsContent: ITicketItem[] = [
     {
         imgPath: "jltshort.png",
         title:"Jeep Lawu Tour (Short Trip)",
-        date: "Unknow",
+        date: "Setiap Hari",
         price: "350.000",
         link: "",
         desc: ""
@@ -44,7 +44,7 @@ export const ticketsContent: ITicketItem[] = [
     {
         imgPath: "jltmedium.jpg",
         title:"Jeep Lawu Tour (Medium Trip)",
-        date: "Unknow",
+        date: "Setiap Hari",
         price: "450.000",
         link: "",
         desc: ""
@@ -52,7 +52,7 @@ export const ticketsContent: ITicketItem[] = [
     {
         imgPath: "jltlong.jpg",
         title:"Jeep Lawu Tour (Long Trip)",
-        date: "Unknow",
+        date: "Setiap Hari",
         price: "550.000",
         link: "",
         desc: ""
