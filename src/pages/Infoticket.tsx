@@ -47,10 +47,10 @@ function TicketItem(props: ITicketItem) {
         <img src={props.imgPath} />
       </div>
       <div className="content">
-        <p className="title">{props.title}</p>
+        <p className="ticket__title">{props.title}</p>
         <p className="price">
-          <span>Rp {props.price} / Tiket</span>
-          {props.date}
+          <span className="price__ticket">Rp {props.price} / Tiket</span>
+          <span className="price__date">{props.date}</span>
         </p>
         <p className="desc">{props.desc}</p>
       </div>
@@ -111,7 +111,7 @@ export function Overlay() {
         <button className="btn-close" onClick={closeHandler}>
           X
         </button>
-        <img src={data?.imgPath} />
+        <img className="overelay__img" src={data?.imgPath} />
         <h1 className="title">{data?.title}</h1>
         <p className="price">Rp {data?.price} / Tiket</p>
         <p>Jumlah Tiket</p>

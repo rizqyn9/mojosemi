@@ -1,132 +1,113 @@
 #infoticket {
-  min-height: 100vh;
-  width: 100%;
-  padding-top: 4rem;
-
-  display: flex;
-  flex-direction: column;
-
-  gap: 3rem;
-
-  .title {
-    text-align: center;
-    @extend .base__title;
-  }
-
-  .ticket-container {
-    padding: 1rem;
-
-    display: grid;
-    place-items: center;
-    column-gap: 1rem;
-    row-gap: 1rem;
-    grid-template-columns: 1fr 1fr;
-
-    @media (max-width: 1560px) {
-      row-gap: 3rem;
-      grid-template-columns: 1fr;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    overflow-x: hidden;
+    .title {
+        text-align: center;
+        @extend .base__title;
     }
-  }
+    .ticket-container {
+        padding: 1rem;
+        max-width: 1200px;
+        display: grid;
+        place-items: center;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        @media (max-width: 1560px) {
+            row-gap: 3rem;
+            grid-template-columns: 1fr;
+        }
+    }
 }
 
 .overlay-container {
-  padding: 0;
-  margin: 0;
-  display: none;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.294);
-
-  justify-content: center;
-  align-items: center;
-
-  z-index: 100;
-
-  .container-wrapper {
-    padding: 3rem;
-    // width: 80vw;
-    height: 50vh;
-
-    background-color: rgb(255, 255, 255);
-    box-shadow: 3px 3px 18px black;
-    border-radius: 10px;
-
-    display: flex;
-    position: relative;
-    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.294);
     justify-content: center;
     align-items: center;
-
-    .btn-close {
-      position: absolute;
-      right: 1rem;
-      top: 1rem;
-
-      border: none;
-      font-size: 1rem;
-      font-weight: bolder;
-      background-color: transparent;
-
-      cursor: pointer;
+    z-index: 100;
+    .container-wrapper {
+        padding: 3rem;
+        height: 50vh;
+        min-height: max-content;
+        max-width: 600px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 3px 3px 18px black;
+        border-radius: 10px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .btn-close {
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            border: none;
+            font-size: 1rem;
+            font-weight: bolder;
+            background-color: transparent;
+            cursor: pointer;
+        }
+        .overelay__img {
+            position: relative;
+            // max-height: 100%;
+            max-width: 15rem;
+        }
+        .ticket__title {
+            margin: 1rem 0 0 0;
+            font-size: 2.5em;
+            color: black;
+        }
+        .price {
+            margin: 0;
+            margin-bottom: 3rem;
+            font-style: italic;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            button {
+                width: 2rem;
+                height: 2rem;
+                font-size: 1.2em;
+                font-weight: bold;
+                @extend .base-btn;
+            }
+            p {
+                font-size: 1.5em;
+            }
+        }
+        .btn-buy {
+            padding: 0.3em 2em 0.3em 2em;
+            margin-top: 2rem;
+            @extend .base-btn;
+            text-decoration: none;
+            font-size: 1.1em;
+            pointer-events: visible;
+            &.disabled {
+                cursor: not-allowed;
+                background-color: grey;
+            }
+        }
     }
-
-    img {
-      max-width: 15rem;
+    &.active {
+        display: flex;
     }
-
-    .title {
-      margin: 1rem 0 0 0;
-      font-size: 2.5em;
-      color: black;
-    }
-
-    .price {
-      margin: 0;
-      margin-bottom: 3rem;
-      font-style: italic;
-    }
-
-    .btn-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 1.5rem;
-
-      button {
-        width: 2rem;
-        height: 2rem;
-
-        font-size: 1.2em;
-        font-weight: bold;
-        @extend .base-btn;
-      }
-
-      p {
-        font-size: 1.5em;
-      }
-    }
-
-    .btn-buy {
-      padding: 0.3em 2em 0.3em 2em;
-      margin-top: 2rem;
-      @extend .base-btn;
-      text-decoration: none;
-      font-size: 1.1em;
-      pointer-events: visible;
-
-      &.disabled {
-        cursor: not-allowed;
-        background-color: grey;
-      }
-    }
-  }
-
-  &.active {
-    display: flex;
-  }
+    @media (max-width: 400px) {}
 }
