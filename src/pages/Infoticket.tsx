@@ -143,6 +143,7 @@ interface IGenLink {
 }
 
 export const WA_URL = "https://api.whatsapp.com/send?phone=";
+export const RESERVE = "6282236335003";
 
 function generateLink(props: IGenLink): string {
   let total = parseInt(props.price.replace(".", "")) * props.count;

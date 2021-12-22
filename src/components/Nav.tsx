@@ -3,11 +3,13 @@ import { Link, useHref } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import classNames from "classnames";
 import { atom, useAtom } from "jotai";
+import { RESERVE, WA_URL } from "../pages/Infoticket";
 
 const linkList: ILinkNav[] = [
   {
     title: "Reservasi Penginapan",
-    to: "",
+    to: `https://api.whatsapp.com/send?phone=${RESERVE}`,
+    useLinkOuter: true,
   },
   {
     title: "Tiket Wahana",
@@ -43,6 +45,7 @@ export default function Nav() {
                 title={val.title}
                 to={val.to}
                 onClick={handleClick}
+                useLinkOuter={val.useLinkOuter}
               />
             );
           })}
@@ -58,6 +61,7 @@ export default function Nav() {
 interface ILinkNav {
   title: string;
   to: string;
+  useLinkOuter?: boolean;
   onClick?: () => void;
 }
 
@@ -69,13 +73,26 @@ function LinkNav(props: ILinkNav) {
   };
 
   return (
-    <Link to={props.to}>
-      <div
-        className={classNames("link-nav", { active: click })}
-        onClick={handleClick}
-      >
-        {props.title}
-      </div>
-    </Link>
+    <>
+      {props.useLinkOuter ? (
+        <a href={props.to} target="_blank" rel="noreel">
+          <div
+            className={classNames("link-nav", { active: click })}
+            onClick={handleClick}
+          >
+            {props.title}
+          </div>
+        </a>
+      ) : (
+        <Link to={props.to}>
+          <div
+            className={classNames("link-nav", { active: click })}
+            onClick={handleClick}
+          >
+            {props.title}
+          </div>
+        </Link>
+      )}
+    </>
   );
 }
