@@ -1,12 +1,10 @@
 body {
   position: relative;
   font-family: $poppins;
-  width: 100vw;
+  max-width: 100vw;
   overflow-x: hidden;
 }
-#root {
-  position: relative;
-}
+
 .body-background {
   position: absolute;
   top: var(--nav-height);
