@@ -7,7 +7,10 @@ export default function Home() {
     <div id="home">
       <Hero />
       <HomeCardSection {...Promo} />
+      <br />
+      <br />
       <hr />
+      <br />
       <HomeCardSection {...LayananKami} />
       <ContactSection />
     </div>

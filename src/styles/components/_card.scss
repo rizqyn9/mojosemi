@@ -1,6 +1,6 @@
 .card-container {
   height: 13rem;
-  width: 28rem;
+  width: 25rem;
   max-width: 100%;
 
   border-radius: 8px;
@@ -11,13 +11,15 @@
 
   background-size: 100% !important;
   background-position: center !important;
+  background-repeat: no-repeat !important;
 
   text-decoration: none;
   color: white;
 
   position: relative;
   transition: all 0.5s ease-in-out;
-  // overflow: hidden;
+
+  text-align: center;
 
   &::after {
     content: "";
@@ -45,6 +47,7 @@
   }
 
   .card-container__content {
+    // max-width: 100%;
     position: absolute;
     z-index: 5;
 
@@ -63,5 +66,9 @@
       font-size: 0.7rem;
       font-weight: lighter;
     }
+  }
+
+  @media (max-width: 400) {
+    background-size: cover !important;
   }
 }
