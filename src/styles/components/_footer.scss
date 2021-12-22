@@ -1,6 +1,12 @@
 footer {
-  // background-color: red;
+  background-color: $third-color;
   width: 100%;
+  margin-top: 3rem;
+
+  padding: {
+    top: 2rem;
+    bottom: 2rem;
+  }
 
   .wrapper {
     // background-color: yellow;
@@ -37,7 +43,7 @@ footer {
           max-width: 100%;
           // background-color: yellow;
           p {
-            color: darkgrey;
+            opacity: 0.7;
           }
         }
 
@@ -58,14 +64,14 @@ footer {
           justify-content: flex-start;
           gap: 0.5rem;
 
-          color: darkgrey;
+          opacity: 0.7;
 
           .icon-container {
             width: 1.5rem;
             height: 1.5rem;
-            color: darkgrey;
 
             @extend .flex-center;
+            opacity: 0.7;
 
             svg {
               width: 100%;
@@ -74,10 +80,7 @@ footer {
           }
 
           &:hover {
-            .icon-container {
-              color: black;
-            }
-            color: black;
+            opacity: 1;
           }
         }
       }
@@ -99,7 +102,7 @@ footer {
       }
     }
     .copyright {
-      padding: 2rem;
+      margin-top: 3rem;
       width: 100%;
       font-size: 0.9em;
       font-weight: 300;

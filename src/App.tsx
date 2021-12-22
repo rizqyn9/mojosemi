@@ -1,7 +1,7 @@
 import Nav from "./components/Nav";
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
-import InfoTicket from "./pages/Infoticket";
+import InfoTicket, { Overlay } from "./pages/Infoticket";
 import ModernCamp from "./pages/Moderncamp";
 import FamilyCamp from "./pages/Familycamp";
 import DinoShow from "./pages/Dinoshow";
@@ -13,6 +13,7 @@ function App() {
     <>
       {/* <div className="body-background"></div> */}
       <Nav />
+      <Overlay />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="infoticket" element={<InfoTicket />} />

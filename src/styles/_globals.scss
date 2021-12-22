@@ -92,10 +92,24 @@ a {
   }
 }
 
+.prevent-scroll {
+  // max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+  // padding: 0 1rem 0 0;
+}
+
 .base__title {
   font-size: 3rem;
   color: $third-color;
   filter: brightness(0.6);
+
+  @media (max-width: 800px) {
+    font-size: 2rem;
+  }
+  @media (max-width: 350px) {
+    font-size: 1.5rem;
+  }
 }
 
 .flex-center {
