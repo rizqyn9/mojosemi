@@ -111,7 +111,9 @@ export function Overlay() {
         <button className="btn-close" onClick={closeHandler}>
           X
         </button>
-        <img className="overelay__img" src={data?.imgPath} />
+        <div className="img-container">
+          <img className="overlay__img" src={data?.imgPath} />
+        </div>
         <h1 className="title">{data?.title}</h1>
         <p className="price">Rp {data?.price} / Tiket</p>
         <p>Jumlah Tiket</p>
