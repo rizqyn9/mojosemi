@@ -93,12 +93,28 @@ export function Footer() {
             </div>
           </ListFooterContainer>
           <ListFooterContainer title="Kontak">
-            {useLinkIcon("asd", "WhatsApp", <SiWhatsapp />)}
-            {useLinkIcon("asd", "WhatsApp", <SiWhatsapp />)}
+            {useLinkIcon(
+              "https://wa.me/628113783000",
+              "0811-3783-000",
+              <SiWhatsapp />
+            )}
+            {useLinkIcon(
+              "mailto:mojosemiforestpark@gmail.com",
+              "Email",
+              <SiMinutemailer />
+            )}
           </ListFooterContainer>
           <ListFooterContainer title="Media Sosial">
-            {useLinkIcon("asd", "WhatsApp", <SiWhatsapp />)}
-            {useLinkIcon("asd", "WhatsApp", <SiWhatsapp />)}
+            {useLinkIcon(
+              "https://www.instagram.com/mojosemiforestpark",
+              "Mojosemi Forest Park",
+              <SiInstagram />
+            )}
+            {useLinkIcon(
+              "https://www.facebook.com/mojosemidinosauruspark",
+              "Mojosemi Dinosaurus Park",
+              <SiFacebook />
+            )}
           </ListFooterContainer>
         </div>
         <div className="copyright">Copyright Mojosemi Forest Park @2021</div>
